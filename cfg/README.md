@@ -21,7 +21,7 @@
 
 Custom_Clash.ini
 ```
-https://testingcf.jsdelivr.net/gh/Aethersailor/Custom_OpenClash_Rules@main/cfg/Custom_Clash.ini
+https://testingcf.jsdelivr.net/gh/ZiPenOk/Custom_OpenClash_Rules@main/cfg/Custom_Clash.ini
 ```
 
 Custom_Clash_GFW.ini
