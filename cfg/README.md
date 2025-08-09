@@ -16,6 +16,8 @@
 | Custom_Clash_Smart_Lite.ini | Smart | 仅包含国内直连规则的模板，国外全部代理且不做分流 |
 | Custom_Clash_Smart_Full.ini | Smart | 重度分流规则模板 |
 
+**后端地址**
+https://api.sh1nyan.fun/sub?
 
 **加速链接：**
 
