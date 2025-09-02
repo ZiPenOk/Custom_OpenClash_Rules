@@ -17,7 +17,7 @@
 | Custom_Clash_Smart_Full.ini | Smart | 重度分流规则模板 |
 
 **后端地址**
-https://api.sh1nyan.fun/sub?
+http://hangzhou.cstext.top:28405/sub?
 
 **加速链接：**
 
