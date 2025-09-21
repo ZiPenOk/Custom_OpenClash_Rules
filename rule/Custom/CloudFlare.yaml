@@ -3,6 +3,8 @@
 # https://github.com/blackmatrix7/ios_rule_script/blob/master/rule/Clash/Cloudflare/Cloudflare_No_Resolve.yaml
 
 payload:
+  - DOMAIN-SUFFIX,sh1nyan.fun
+  - DOMAIN-SUFFIX,sh1nyan.qzz.io
   - DOMAIN-SUFFIX,cf-ipfs.com
   - DOMAIN-SUFFIX,cf-ns.com
   - DOMAIN-SUFFIX,cf-ns.net
