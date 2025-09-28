@@ -1,4 +1,4 @@
-# YAML 覆写
+# YAML 覆写示例
 # 直接覆写配置文件中的字段，支持mihomo所有覆写选项
 
 # 基本端口配置
@@ -9,9 +9,9 @@
 # tproxy-port: 7894
 
 # 网络配置
-# allow-lan: true
-# bind-address: "*"
-# ipv6: false
+allow-lan: true
+bind-address: "*"
+ipv6: false
 
 # 模式和日志
 # mode: rule
@@ -19,7 +19,19 @@
 
 # 外部控制器
 external-controller: 127.0.0.1:9090
-secret: "57447620Aq"
+external-controller-pipe: ""
+external-controller-unix: ""
+external-controller-tls: ""
+external-ui: ""
+external-ui-url: ""
+external-ui-name: ""
+external-doh-server: ""
+secret: 57447620Aq
+# 外部控制器CORS配置
+external-controller-cors:
+    allow-origins:
+        - '*'
+    allow-private-network: true
 
 # 认证配置
 # authentication:
@@ -40,7 +52,7 @@ secret: "57447620Aq"
 # DNS配置
 dns:
   enable: true
-#   prefer-h3: false
+  prefer-h3: false
 #   listen: 0.0.0.0:53
   ipv6: false
   use-hosts: true
@@ -49,7 +61,7 @@ dns:
   nameserver:
     - https://doh.pub/dns-query
     - https://dns.alidns.com/dns-query
-  # fallback:
+  fallback:[]
   #   - 8.8.4.4
   #   - 1.1.1.1
   default-nameserver:
@@ -221,12 +233,6 @@ dns:
 #   skip-domain:
 #     - "Mijia Cloud"
 #     - "+.push.apple.com"
-
-# 外部控制器CORS配置
-# external-controller-cors:
-#   allow-origins:
-#     - "*"
-#   allow-private-network: true
 
 # GeoX URL配置
 # geox-url:
