@@ -1,5 +1,6 @@
 # 内容：Dmm
 # 数量：14条
+# https://github.com/ZiPenOk/Custom_OpenClash_Rules/blob/dev/rule/Custom/JavDB.yaml
 
 payload:
   - DOMAIN-SUFFIX,javdb.com
