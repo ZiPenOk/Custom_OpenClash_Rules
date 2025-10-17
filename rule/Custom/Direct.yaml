@@ -1,5 +1,6 @@
-# 内容：个人使用环境-国外代理
-# 数量：0条
+# 内容：个人使用环境-国内直连
+# 数量：1条
 
-##payload:
-##  - DOMAIN-SUFFIX,baidu.com
+payload:
+# F&F订阅
+  - DOMAIN-SUFFIX,subscription.fnf.xyz
