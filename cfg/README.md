@@ -17,46 +17,46 @@
 | Custom_Clash_Smart_Full.ini | Smart | 重度分流规则模板 |
 
 **后端地址**
-http://hangzhou.cstext.top:28405/sub?
+https://api.sh1nyan.fun/sub?
 
 **加速链接：**
 
 Custom_Clash.ini
 ```
-https://testingcf.jsdelivr.net/gh/ZiPenOk/Custom_OpenClash_Rules@dev/cfg/Custom_Clash.ini
+https://github.com/ZiPenOk/Custom_OpenClash_Rules/raw/dev/cfg/Custom_Clash.ini
 ```
 
 Custom_Clash_GFW.ini
 ```
-https://testingcf.jsdelivr.net/gh/Aethersailor/Custom_OpenClash_Rules@main/cfg/Custom_Clash_GFW.ini
+https://github.com/ZiPenOk/Custom_OpenClash_Rules/raw/dev/cfg/Custom_Clash_GFW.ini
 ```
 
 Custom_Clash_Lite.ini
 ```
-https://testingcf.jsdelivr.net/gh/Aethersailor/Custom_OpenClash_Rules@main/cfg/Custom_Clash_Lite.ini
+https://github.com/ZiPenOk/Custom_OpenClash_Rules/raw/dev/cfg/Custom_Clash_Lite.ini
 ```
 
 Custom_Full_Clash.ini
 ```
-https://testingcf.jsdelivr.net/gh/Aethersailor/Custom_OpenClash_Rules@main/cfg/Custom_Clash_Full.ini
+https://github.com/ZiPenOk/Custom_OpenClash_Rules/raw/dev/cfg/Custom_Clash_Full.ini
 ```
 
 Custom_Clash_Smart.ini
 ```
-https://testingcf.jsdelivr.net/gh/Aethersailor/Custom_OpenClash_Rules@main/cfg/Custom_Clash_Smart.ini
+https://github.com/ZiPenOk/Custom_OpenClash_Rules/raw/dev/cfg/Custom_Clash_Smart.ini
 ```
 
 Custom_Clash_Smart_GFW.ini
 ```
-https://testingcf.jsdelivr.net/gh/Aethersailor/Custom_OpenClash_Rules@main/cfg/Custom_Clash_Smart_GFW.ini
+https://github.com/ZiPenOk/Custom_OpenClash_Rules/raw/dev/cfg/Custom_Clash_Smart_GFW.ini
 ```
 
 Custom_Clash_Smart_Lite.ini
 ```
-https://testingcf.jsdelivr.net/gh/Aethersailor/Custom_OpenClash_Rules@main/cfg/Custom_Clash_Smart_Lite.ini
+https://github.com/ZiPenOk/Custom_OpenClash_Rules/raw/dev/cfg/Custom_Clash_Smart_Lite.ini
 ```
 
 Custom_Clash_Smart_Full.ini
 ```
-https://testingcf.jsdelivr.net/gh/Aethersailor/Custom_OpenClash_Rules@main/cfg/Custom_Clash_Smart_Full.ini
+https://github.com/ZiPenOk/Custom_OpenClash_Rules/raw/dev/cfg/Custom_Clash_Smart_Full.ini
 ```
