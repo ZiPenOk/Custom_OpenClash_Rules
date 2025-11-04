@@ -1,9 +1,0 @@
-# 内容：javdb
-# 数量：4条
-# https://github.com/ZiPenOk/Custom_OpenClash_Rules/blob/dev/rule/Custom/JavDB.yaml
-
-payload:
-  - DOMAIN-SUFFIX,jav.app
-  - DOMAIN-SUFFIX,javdb.com
-  - DOMAIN-SUFFIX,jdbimgs.com
-  - DOMAIN-SUFFIX,jdbstatic.com
