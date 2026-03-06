@@ -1,5 +1,5 @@
 # 内容：AV厂商 特殊处理
-# 数量：12条
+# 数量：13条
 
 payload:
   - DOMAIN-SUFFIX,sod.co.jp
@@ -14,3 +14,4 @@ payload:
   - DOMAIN-SUFFIX,premium-beauty.com
   - DOMAIN-SUFFIX,tameikegoro.jp
   - DOMAIN-SUFFIX,wanz-factory.com
+  - DOMAIN-SUFFIX,ideapocket.com
