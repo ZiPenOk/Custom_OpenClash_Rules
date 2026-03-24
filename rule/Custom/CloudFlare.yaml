@@ -1,6 +1,8 @@
 # 内容：CloudFlare 自托管域名
-# 数量：2条
+# 数量：3条
 
 payload:
   - DOMAIN-SUFFIX,sh1nyan.fun
   - DOMAIN-SUFFIX,sh1nyan.qzz.io
+  - IP-CIDR,43.156.92.155/32,no-resolve
+
