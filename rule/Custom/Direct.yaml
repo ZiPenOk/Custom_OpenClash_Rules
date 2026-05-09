@@ -1,7 +1,9 @@
 # 内容：个人使用环境-国内直连
-# 数量：1条
+# 数量：2条
 
 payload:
 # F&F订阅
   - DOMAIN-SUFFIX,love.xn--fiqs8s96v5tnx40a.net
+# 蓝移API  
+  - DOMAIN-SUFFIX,lanyiapi.com
   
