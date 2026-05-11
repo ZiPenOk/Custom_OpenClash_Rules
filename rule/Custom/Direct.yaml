@@ -4,6 +4,5 @@
 payload:
 # F&F订阅
   - DOMAIN-SUFFIX,love.xn--fiqs8s96v5tnx40a.net
-# 蓝移API  
-  - DOMAIN-SUFFIX,lanyiapi.com
+  
   
