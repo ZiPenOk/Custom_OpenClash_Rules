@@ -111,7 +111,7 @@ proxy-groups:
       - 美国节点
   - name: DMM
     type: select
-    icon: file:///C:/Users/Administrator/Documents/Codex/2026-05-16/files-mentioned-by-the-user-clash/icons/dmm.svg
+    icon: https://testingcf.jsdelivr.net/gh/ZiPenOk/Custom_OpenClash_Rules@dev/rule/Custom/icons/dmm.svg
     use:
       - ALL
     filter: .*
@@ -134,7 +134,7 @@ proxy-groups:
       - 全球直连
   - name: JavDB
     type: select
-    icon: file:///C:/Users/Administrator/Documents/Codex/2026-05-16/files-mentioned-by-the-user-clash/icons/javdb.svg
+    icon: https://testingcf.jsdelivr.net/gh/ZiPenOk/Custom_OpenClash_Rules@dev/rule/Custom/icons/javdb.svg
     use:
       - ALL
     filter: .*
@@ -157,7 +157,7 @@ proxy-groups:
       - 全球直连
   - name: Porn
     type: select
-    icon: file:///C:/Users/Administrator/Documents/Codex/2026-05-16/files-mentioned-by-the-user-clash/icons/porn.svg
+    icon: https://testingcf.jsdelivr.net/gh/ZiPenOk/Custom_OpenClash_Rules@dev/rule/Custom/icons/porn.svg
     use:
       - ALL
     filter: .*
