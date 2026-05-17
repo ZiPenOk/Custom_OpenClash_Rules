@@ -1,12 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Porn">
-  <rect width="128" height="128" rx="24" fill="#111111"/>
-  <rect x="14" y="36" width="100" height="56" rx="12" fill="#ff9900"/>
-  <text x="64" y="66"
-        text-anchor="middle"
-        dominant-baseline="middle"
-        font-family="Arial, Helvetica, sans-serif"
-        font-size="37"
-        font-weight="900"
-        letter-spacing="0"
-        fill="#111111">Porn</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <defs>
+
+    <mask id="pronhub-mask">
+      <rect x="0" y="64" width="128" height="64" fill="white" />
+      <text x="50%" y="96" dominant-baseline="central" text-anchor="middle" font-family="sans-serif" font-weight="900" font-size="55" fill="black">Hub</text>
+    </mask>
+  </defs>
+
+  <text x="50%" y="32" dominant-baseline="central" text-anchor="middle" font-family="sans-serif" font-weight="900" font-size="55" fill="#696969">Porn</text>
+
+  <rect x="0" y="64" width="128" height="64" fill="#FF8C00" mask="url(#pronhub-mask)" />
 </svg>
