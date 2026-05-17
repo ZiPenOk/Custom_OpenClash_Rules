@@ -157,7 +157,7 @@ proxy-groups:
       - 全球直连
   - name: Porn
     type: select
-    icon: https://raw.githubusercontent.com/ZiPenOk/Custom_OpenClash_Rules/dev/rule/Custom/icons/Porn.png
+    icon: https://raw.githubusercontent.com/ZiPenOk/Custom_OpenClash_Rules/dev/rule/Custom/icons/porn.png
     use:
       - ALL
     filter: .*
