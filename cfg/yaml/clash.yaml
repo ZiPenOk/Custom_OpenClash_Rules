@@ -7,7 +7,7 @@ external-controller: 127.0.0.1:9090
 proxy-providers:
   ALL:
     type: http
-    url: http://10.10.10.80:3301/tFxTgt9HbPkK4wmW9CptuyZy4uJ07zZxpUqe2FzXuf7AGw83fVSVspbatj0ZN2Eb/download/collection/all?target=ClashMeta
+    url: 订阅地址
     interval: 3600
     proxy: DIRECT
     path: ./rule_provider/ALL.yaml
@@ -21,7 +21,7 @@ proxy-providers:
 proxy-groups:
   - name: 手动选择
     type: select
-    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Proxy.png
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Proxy.png
     use:
       - ALL
     filter: .*
@@ -42,7 +42,7 @@ proxy-groups:
       - 其他地区
   - name: 自动选择
     type: url-test
-    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Auto.png
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Auto.png
     url: https://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
@@ -51,7 +51,7 @@ proxy-groups:
     filter: .*
   - name: Telegram
     type: select
-    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Telegram.png
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Telegram.png
     use:
       - ALL
     filter: .*
@@ -74,7 +74,7 @@ proxy-groups:
       - 全球直连
   - name: 社交媒体
     type: select
-    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Global.png
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Global.png
     use:
       - ALL
     filter: .*
@@ -97,7 +97,7 @@ proxy-groups:
       - 全球直连
   - name: PikPak
     type: select
-    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Download.png
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Download.png
     use:
       - ALL
     filter: .*
@@ -111,7 +111,7 @@ proxy-groups:
       - 美国节点
   - name: DMM
     type: select
-    icon: https://testingcf.jsdelivr.net/gh/ZiPenOk/Custom_OpenClash_Rules@dev/rule/Custom/icons/dmm.svg
+    icon: https://raw.githubusercontent.com/ZiPenOk/Custom_OpenClash_Rules/dev/rule/Custom/icons/dmm.png
     use:
       - ALL
     filter: .*
@@ -134,7 +134,7 @@ proxy-groups:
       - 全球直连
   - name: JavDB
     type: select
-    icon: https://testingcf.jsdelivr.net/gh/ZiPenOk/Custom_OpenClash_Rules@dev/rule/Custom/icons/javdb.svg
+    icon: https://raw.githubusercontent.com/ZiPenOk/Custom_OpenClash_Rules/dev/rule/Custom/icons/javdb.png
     use:
       - ALL
     filter: .*
@@ -157,7 +157,7 @@ proxy-groups:
       - 全球直连
   - name: Porn
     type: select
-    icon: https://testingcf.jsdelivr.net/gh/ZiPenOk/Custom_OpenClash_Rules@dev/rule/Custom/icons/porn.svg
+    icon: https://raw.githubusercontent.com/ZiPenOk/Custom_OpenClash_Rules/dev/rule/Custom/icons/Porn.png
     use:
       - ALL
     filter: .*
@@ -180,7 +180,7 @@ proxy-groups:
       - 全球直连
   - name: GitHub
     type: select
-    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/GitHub.png
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/GitHub.png
     use:
       - ALL
     filter: .*
@@ -203,7 +203,7 @@ proxy-groups:
       - 全球直连
   - name: CloudFlare
     type: select
-    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Cloudflare.png
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Cloudflare.png
     use:
       - ALL
     filter: .*
@@ -226,7 +226,7 @@ proxy-groups:
       - 全球直连
   - name: ChatGPT
     type: select
-    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/ChatGPT.png
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/ChatGPT.png
     use:
       - ALL
     filter: .*
@@ -249,7 +249,7 @@ proxy-groups:
       - 全球直连
   - name: Copilot
     type: select
-    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Copilot.png
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Copilot.png
     use:
       - ALL
     filter: .*
@@ -272,7 +272,7 @@ proxy-groups:
       - 全球直连
   - name: AI服务
     type: select
-    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/AI.png
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/AI.png
     use:
       - ALL
     filter: .*
@@ -295,7 +295,7 @@ proxy-groups:
       - 全球直连
   - name: TikTok
     type: select
-    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/TikTok.png
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/TikTok.png
     use:
       - ALL
     filter: .*
@@ -318,7 +318,7 @@ proxy-groups:
       - 全球直连
   - name: YouTube
     type: select
-    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/YouTube.png
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/YouTube.png
     use:
       - ALL
     filter: .*
@@ -341,7 +341,7 @@ proxy-groups:
       - 全球直连
   - name: Netflix
     type: select
-    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Netflix.png
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Netflix.png
     use:
       - ALL
     filter: .*
@@ -364,7 +364,7 @@ proxy-groups:
       - 全球直连
   - name: Spotify
     type: select
-    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Spotify.png
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Spotify.png
     use:
       - ALL
     filter: .*
@@ -387,7 +387,7 @@ proxy-groups:
       - 全球直连
   - name: 国外媒体
     type: select
-    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/ForeignMedia.png
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/ForeignMedia.png
     use:
       - ALL
     filter: .*
@@ -410,7 +410,7 @@ proxy-groups:
       - 全球直连
   - name: 国外电商
     type: select
-    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Amazon.png
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Amazon.png
     use:
       - ALL
     filter: .*
@@ -433,7 +433,7 @@ proxy-groups:
       - 全球直连
   - name: 谷歌FCM
     type: select
-    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Google.png
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Google.png
     use:
       - ALL
     filter: .*
@@ -456,7 +456,7 @@ proxy-groups:
       - 全球直连
   - name: 谷歌服务
     type: select
-    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Google.png
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Google.png
     use:
       - ALL
     filter: .*
@@ -479,7 +479,7 @@ proxy-groups:
       - 全球直连
   - name: 苹果服务
     type: select
-    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Apple.png
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Apple.png
     use:
       - ALL
     filter: .*
@@ -502,7 +502,7 @@ proxy-groups:
       - 全球直连
   - name: 微软服务
     type: select
-    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Microsoft.png
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Microsoft.png
     use:
       - ALL
     filter: .*
@@ -525,7 +525,7 @@ proxy-groups:
       - 全球直连
   - name: 测速工具
     type: select
-    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Speedtest.png
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Speedtest.png
     use:
       - ALL
     filter: .*
@@ -548,7 +548,7 @@ proxy-groups:
       - 全球直连
   - name: 漏网之鱼
     type: select
-    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Final.png
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Final.png
     use:
       - ALL
     filter: .*
@@ -571,13 +571,13 @@ proxy-groups:
       - 全球直连
   - name: 非标端口
     type: select
-    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/World_Map.png
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/World_Map.png
     proxies:
       - 遵循规则
       - 全球直连
   - name: 香港节点
     type: url-test
-    icon: https://testingcf.jsdelivr.net/gh/lipis/flag-icons@main/flags/4x3/hk.svg
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Hong_Kong.png
     url: https://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
@@ -586,7 +586,7 @@ proxy-groups:
     filter: (港|HK|hk|Hong Kong|HongKong|hongkong|深港)
   - name: 美国节点
     type: url-test
-    icon: https://testingcf.jsdelivr.net/gh/lipis/flag-icons@main/flags/4x3/us.svg
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/United_States.png
     url: https://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
@@ -595,7 +595,7 @@ proxy-groups:
     filter: (美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United States|UnitedStates)
   - name: 日本节点
     type: url-test
-    icon: https://testingcf.jsdelivr.net/gh/lipis/flag-icons@main/flags/4x3/jp.svg
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Japan.png
     url: https://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
@@ -604,7 +604,7 @@ proxy-groups:
     filter: (日本|川日|东京|大阪|泉日|埼玉|沪日|深日|(?<!尼|-)日|JP|Japan)
   - name: 新加坡节点
     type: url-test
-    icon: https://testingcf.jsdelivr.net/gh/lipis/flag-icons@main/flags/4x3/sg.svg
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Singapore.png
     url: https://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
@@ -613,7 +613,7 @@ proxy-groups:
     filter: (新加坡|坡|狮城|SG|Singapore)
   - name: 台湾节点
     type: url-test
-    icon: https://testingcf.jsdelivr.net/gh/lipis/flag-icons@main/flags/4x3/tw.svg
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Taiwan.png
     url: https://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
@@ -622,7 +622,7 @@ proxy-groups:
     filter: (台|新北|彰化|TW|Taiwan)
   - name: 韩国节点
     type: url-test
-    icon: https://testingcf.jsdelivr.net/gh/lipis/flag-icons@main/flags/4x3/kr.svg
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Korea.png
     url: https://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
@@ -631,7 +631,7 @@ proxy-groups:
     filter: (KR|Korea|KOR|首尔|韩|韓)
   - name: 加拿大节点
     type: url-test
-    icon: https://testingcf.jsdelivr.net/gh/lipis/flag-icons@main/flags/4x3/ca.svg
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Canada.png
     url: https://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
@@ -640,7 +640,7 @@ proxy-groups:
     filter: (加拿大|Canada|渥太华|温哥华|卡尔加里)
   - name: 英国节点
     type: url-test
-    icon: https://testingcf.jsdelivr.net/gh/lipis/flag-icons@main/flags/4x3/gb.svg
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/United_Kingdom.png
     url: https://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
@@ -649,7 +649,7 @@ proxy-groups:
     filter: (英国|Britain|United Kingdom|England|伦敦)
   - name: 法国节点
     type: url-test
-    icon: https://testingcf.jsdelivr.net/gh/lipis/flag-icons@main/flags/4x3/fr.svg
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/France.png
     url: https://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
@@ -658,7 +658,7 @@ proxy-groups:
     filter: (法国|France|巴黎)
   - name: 德国节点
     type: url-test
-    icon: https://testingcf.jsdelivr.net/gh/lipis/flag-icons@main/flags/4x3/de.svg
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Germany.png
     url: https://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
@@ -667,7 +667,7 @@ proxy-groups:
     filter: (德国|Germany|柏林|法兰克福)
   - name: 荷兰节点
     type: url-test
-    icon: https://testingcf.jsdelivr.net/gh/lipis/flag-icons@main/flags/4x3/nl.svg
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Europe_Map.png
     url: https://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
@@ -676,7 +676,7 @@ proxy-groups:
     filter: (荷兰|Netherlands|阿姆斯特丹)
   - name: 土耳其节点
     type: url-test
-    icon: https://testingcf.jsdelivr.net/gh/lipis/flag-icons@main/flags/4x3/tr.svg
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Turkey.png
     url: https://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
@@ -685,7 +685,7 @@ proxy-groups:
     filter: (土耳其|Turkey|Türkiye)
   - name: 其他地区
     type: url-test
-    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/World_Map.png
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/World_Map.png
     url: https://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
@@ -694,7 +694,7 @@ proxy-groups:
     filter: (^(?!.*(港|HK|hk|Hong Kong|HongKong|hongkong|深港|美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United States|UnitedStates|日本|川日|东京|大阪|泉日|埼玉|沪日|深日|(?<!尼|-)日|JP|Japan|新加坡|坡|狮城|SG|Singapore|台|新北|彰化|TW|Taiwan|KR|Korea|KOR|首尔|韩|韓|加拿大|Canada|渥太华|温哥华|卡尔加里|英国|Britain|United Kingdom|England|伦敦|法国|France|巴黎|德国|Germany|柏林|法兰克福|荷兰|Netherlands|阿姆斯特丹|土耳其|Turkey|Türkiye)).*)
   - name: 全球直连
     type: select
-    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Direct.png
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Direct.png
     proxies:
       - DIRECT
       - 手动选择
@@ -714,7 +714,7 @@ proxy-groups:
       - 其他地区
   - name: 遵循规则
     type: select
-    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Final.png
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Final.png
     proxies:
       - 漏网之鱼
 rules:
@@ -771,90 +771,90 @@ rule-providers:
   Direct:
     type: http
     behavior: classical
-    url: "https://testingcf.jsdelivr.net/gh/ZiPenOk/Custom_OpenClash_Rules@dev/rule/Custom/Direct.yaml"
+    url: "https://raw.githubusercontent.com/ZiPenOk/Custom_OpenClash_Rules/dev/rule/Custom/Direct.yaml"
     path: ./rule_provider/Direct.yaml
     interval: 28800
   Proxy:
     type: http
     behavior: classical
-    url: "https://testingcf.jsdelivr.net/gh/ZiPenOk/Custom_OpenClash_Rules@dev/rule/Custom/Proxy.yaml"
+    url: "https://raw.githubusercontent.com/ZiPenOk/Custom_OpenClash_Rules/dev/rule/Custom/Proxy.yaml"
     path: ./rule_provider/Proxy.yaml
     interval: 28800
   Custom_Direct_Classical:
     type: http
     behavior: domain
-    url: "https://testingcf.jsdelivr.net/gh/Aethersailor/Custom_OpenClash_Rules@main/rule/Custom_Direct_Classical.yaml"
+    url: "https://raw.githubusercontent.com/Aethersailor/Custom_OpenClash_Rules/main/rule/Custom_Direct_Classical.yaml"
     path: ./rule_provider/Custom_Direct_Classical.yaml
     interval: 28800
   Custom_Direct_Classical_IP:
     type: http
     behavior: classical
-    url: "https://testingcf.jsdelivr.net/gh/Aethersailor/Custom_OpenClash_Rules@main/rule/Custom_Direct_Classical_IP.yaml"
+    url: "https://raw.githubusercontent.com/Aethersailor/Custom_OpenClash_Rules/main/rule/Custom_Direct_Classical_IP.yaml"
     path: ./rule_provider/Custom_Direct_Classical_IP.yaml
     interval: 28800
   Custom_Proxy_Domain:
     type: http
     behavior: domain
-    url: "https://testingcf.jsdelivr.net/gh/Aethersailor/Custom_OpenClash_Rules@main/rule/Custom_Proxy_Domain.yaml"
+    url: "https://raw.githubusercontent.com/Aethersailor/Custom_OpenClash_Rules/main/rule/Custom_Proxy_Domain.yaml"
     path: ./rule_provider/Custom_Proxy_Domain.yaml
     interval: 28800
   Custom_Proxy_Classical_IP:
     type: http
     behavior: classical
-    url: "https://testingcf.jsdelivr.net/gh/Aethersailor/Custom_OpenClash_Rules@main/rule/Custom_Proxy_Classical_IP.yaml"
+    url: "https://raw.githubusercontent.com/Aethersailor/Custom_OpenClash_Rules/main/rule/Custom_Proxy_Classical_IP.yaml"
     path: ./rule_provider/Custom_Proxy_Classical_IP.yaml
     interval: 28800
   Steam_CDN_Classical:
     type: http
     behavior: classical
-    url: "https://testingcf.jsdelivr.net/gh/Aethersailor/Custom_OpenClash_Rules@main/rule/Steam_CDN_Classical.yaml"
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Steam_CDN_Classical.yaml"
     path: ./rule_provider/Steam_CDN_Classical.yaml
     interval: 28800
   DMM_No_Resolve:
     type: http
     behavior: classical
-    url: "https://testingcf.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/DMM/DMM_No_Resolve.yaml"
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/DMM/DMM_No_Resolve.yaml"
     path: ./rule_provider/DMM_No_Resolve.yaml
     interval: 28800
   AV_Category:
     type: http
     behavior: classical
-    url: "https://testingcf.jsdelivr.net/gh/ZiPenOk/Custom_OpenClash_Rules@dev/rule/Custom/AV_Category.yaml"
+    url: "https://raw.githubusercontent.com/ZiPenOk/Custom_OpenClash_Rules/dev/rule/Custom/AV_Category.yaml"
     path: ./rule_provider/AV_Category.yaml
     interval: 28800
   JavDB:
     type: http
     behavior: classical
-    url: "https://testingcf.jsdelivr.net/gh/ZiPenOk/Custom_OpenClash_Rules@dev/rule/Custom/JavDB.yaml"
+    url: "https://raw.githubusercontent.com/ZiPenOk/Custom_OpenClash_Rules/dev/rule/Custom/JavDB.yaml"
     path: ./rule_provider/JavDB.yaml
     interval: 28800
   Telegram_No_Resolve:
     type: http
     behavior: classical
-    url: "https://testingcf.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Telegram/Telegram_No_Resolve.yaml"
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Telegram/Telegram_No_Resolve.yaml"
     path: ./rule_provider/Telegram_No_Resolve.yaml
     interval: 28800
   Cloudflare_No_Resolve:
     type: http
     behavior: classical
-    url: "https://testingcf.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Cloudflare/Cloudflare_No_Resolve.yaml"
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Cloudflare/Cloudflare_No_Resolve.yaml"
     path: ./rule_provider/Cloudflare_No_Resolve.yaml
     interval: 28800
   CloudFlare:
     type: http
     behavior: classical
-    url: "https://testingcf.jsdelivr.net/gh/ZiPenOk/Custom_OpenClash_Rules@dev/rule/Custom/CloudFlare.yaml"
+    url: "https://raw.githubusercontent.com/ZiPenOk/Custom_OpenClash_Rules/dev/rule/Custom/CloudFlare.yaml"
     path: ./rule_provider/CloudFlare.yaml
     interval: 28800
   Speedtest_No_Resolve:
     type: http
     behavior: classical
-    url: "https://testingcf.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Speedtest/Speedtest_No_Resolve.yaml"
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Speedtest/Speedtest_No_Resolve.yaml"
     path: ./rule_provider/Speedtest_No_Resolve.yaml
     interval: 28800
   Custom_Port_Direct:
     type: http
     behavior: classical
-    url: "https://testingcf.jsdelivr.net/gh/Aethersailor/Custom_OpenClash_Rules@main/rule/Custom_Port_Direct.yaml"
+    url: "https://raw.githubusercontent.com/Aethersailor/Custom_OpenClash_Rules/main/rule/Custom_Port_Direct.yaml"
     path: ./rule_provider/Custom_Port_Direct.yaml
     interval: 28800
