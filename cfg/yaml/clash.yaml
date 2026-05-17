@@ -7,7 +7,7 @@ external-controller: 127.0.0.1:9090
 proxy-providers:
   ALL:
     type: http
-    url: 订阅地址
+    url: http://10.10.10.80:3301/tFxTgt9HbPkK4wmW9CptuyZy4uJ07zZxpUqe2FzXuf7AGw83fVSVspbatj0ZN2Eb/download/collection/all?target=ClashMeta
     interval: 3600
     proxy: DIRECT
     path: ./rule_provider/ALL.yaml
