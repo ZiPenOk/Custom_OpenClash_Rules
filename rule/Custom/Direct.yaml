@@ -3,9 +3,4 @@
 
 payload:
 # F&F订阅
-  - DOMAIN-SUFFIX,love.xn--fiqs8s96v5tnx40a.net
-# Cursor
-  #- DOMAIN-SUFFIX,cursor.com
-  #- DOMAIN-SUFFIX,cursor-cdn.com
-  #- DOMAIN-SUFFIX,cursor.sh
-  #- DOMAIN-SUFFIX,cursorapi.com
+  - DOMAIN-SUFFIX,info.xn--blqv68cix3a.com
