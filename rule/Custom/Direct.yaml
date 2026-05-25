@@ -1,6 +1,6 @@
 # 内容：个人使用环境-国内直连
-# 数量：2条
+# 数量：1条
 
 payload:
-# F&F订阅
-  - DOMAIN-SUFFIX,info.xn--blqv68cix3a.com
+# F&F OK 订阅
+  - DOMAIN-SUFFIX,xn--blqv68cix3a.com
