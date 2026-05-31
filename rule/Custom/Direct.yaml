@@ -6,4 +6,4 @@ payload:
 # F&F OK 订阅
   - DOMAIN-SUFFIX,xn--blqv68cix3a.com
 # Pop AI
-  - DOMAIN-SUFFIX,popcorn.wiki
+#  - DOMAIN-SUFFIX,popcorn.wiki
