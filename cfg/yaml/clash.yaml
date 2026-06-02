@@ -34,11 +34,30 @@ proxy-groups:
       - "台湾节点"
       - "韩国节点"
   - name: "自动选择"
-    type: url-test
+    type: select
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Auto.png
+    proxies:
+      - "自动选择-自动测速"
+      - "自动选择-故障转移"
+    use:
+      - ALL
+    filter: ".*"
+    exclude-filter: "\\[SM\\]"
+  - name: "自动选择-自动测速"
+    type: url-test
+    hidden: true
     url: https://cp.cloudflare.com/generate_204
     interval: 300
     tolerance: 50
+    use:
+      - ALL
+    filter: ".*"
+    exclude-filter: "\\[SM\\]"
+  - name: "自动选择-故障转移"
+    type: fallback
+    hidden: true
+    url: https://cp.cloudflare.com/generate_204
+    interval: 300
     use:
       - ALL
     filter: ".*"
