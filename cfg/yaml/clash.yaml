@@ -1,0 +1,605 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+external-controller: 0.0.0.0:9090
+proxy-providers:
+  ALL:
+    type: http
+    url: "订阅地址"
+    interval: 3600
+    proxy: DIRECT
+    path: ./rule_provider/ALL.yaml
+    health-check:
+      enable: true
+      url: https://cp.cloudflare.com/generate_204
+      interval: 300
+    override:
+      skip-cert-verify: true
+      udp: true
+proxy-groups:
+  - name: "手动选择"
+    type: select
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Proxy.png
+    use:
+      - ALL
+    filter: ".*"
+    proxies:
+      - "自动选择"
+      - "香港节点"
+      - "美国节点"
+      - "日本节点"
+      - "新加坡节点"
+      - "台湾节点"
+      - "韩国节点"
+  - name: "自动选择"
+    type: url-test
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Auto.png
+    url: https://cp.cloudflare.com/generate_204
+    interval: 300
+    tolerance: 50
+    use:
+      - ALL
+    filter: ".*"
+  - name: "Telegram"
+    type: select
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Telegram.png
+    use:
+      - ALL
+    filter: ".*"
+    proxies:
+      - "手动选择"
+      - "自动选择"
+      - "香港节点"
+      - "美国节点"
+      - "日本节点"
+      - "新加坡节点"
+      - "台湾节点"
+      - "韩国节点"
+      - "全球直连"
+  - name: "社交媒体"
+    type: select
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Facebook.png
+    use:
+      - ALL
+    filter: ".*"
+    proxies:
+      - "手动选择"
+      - "自动选择"
+      - "香港节点"
+      - "美国节点"
+      - "日本节点"
+      - "新加坡节点"
+      - "台湾节点"
+      - "韩国节点"
+      - "全球直连"
+  - name: "PikPak"
+    type: select
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Download.png
+    use:
+      - ALL
+    filter: ".*"
+    proxies:
+      - "手动选择"
+      - "自动选择"
+      - "香港节点"
+      - "美国节点"
+      - "日本节点"
+      - "新加坡节点"
+      - "台湾节点"
+      - "韩国节点"
+      - "全球直连"
+  - name: "DMM"
+    type: select
+    icon: https://raw.githubusercontent.com/ZiPenOk/Custom_OpenClash_Rules/dev/rule/Custom/icons/dmm.png
+    use:
+        - ALL
+    filter: ".*"
+    proxies:
+      - "手动选择"
+      - "自动选择"
+      - "香港节点"
+      - "美国节点"
+      - "日本节点"
+      - "新加坡节点"
+      - "台湾节点"
+      - "韩国节点"
+      - "全球直连"
+  - name: "JavDB"
+    type: select
+    icon: https://raw.githubusercontent.com/ZiPenOk/Custom_OpenClash_Rules/dev/rule/Custom/icons/javdb.png
+    use:
+      - ALL
+    filter: ".*"
+    proxies:
+      - "手动选择"
+      - "自动选择"
+      - "香港节点"
+      - "美国节点"
+      - "日本节点"
+      - "新加坡节点"
+      - "台湾节点"
+      - "韩国节点"
+      - "全球直连"
+  - name: "Porn"
+    type: select
+    icon: https://raw.githubusercontent.com/ZiPenOk/Custom_OpenClash_Rules/dev/rule/Custom/icons/porn.png
+    use:
+      - ALL
+    filter: ".*"
+    proxies:
+      - "手动选择"
+      - "自动选择"
+      - "香港节点"
+      - "美国节点"
+      - "日本节点"
+      - "新加坡节点"
+      - "台湾节点"
+      - "韩国节点"
+      - "全球直连"
+  - name: "GitHub"
+    type: select
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/GitHub.png
+    use:
+      - ALL
+    filter: ".*"
+    proxies:
+      - "手动选择"
+      - "自动选择"
+      - "香港节点"
+      - "美国节点"
+      - "日本节点"
+      - "新加坡节点"
+      - "台湾节点"
+      - "韩国节点"
+      - "全球直连"
+  - name: "CloudFlare"
+    type: select
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Cloudflare.png
+    use:
+      - ALL
+    filter: ".*"
+    proxies:
+      - "手动选择"
+      - "自动选择"
+      - "香港节点"
+      - "美国节点"
+      - "日本节点"
+      - "新加坡节点"
+      - "台湾节点"
+      - "韩国节点"
+      - "全球直连"
+  - name: "ChatGPT"
+    type: select
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/ChatGPT.png
+    use:
+      - ALL
+    filter: ".*"
+    proxies:
+      - "手动选择"
+      - "自动选择"
+      - "香港节点"
+      - "美国节点"
+      - "日本节点"
+      - "新加坡节点"
+      - "台湾节点"
+      - "韩国节点"
+      - "全球直连"
+  - name: "AI服务"
+    type: select
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/AI.png
+    use:
+      - ALL
+    filter: ".*"
+    proxies:
+      - "手动选择"
+      - "自动选择"
+      - "香港节点"
+      - "美国节点"
+      - "日本节点"
+      - "新加坡节点"
+      - "台湾节点"
+      - "韩国节点"
+      - "全球直连"
+  - name: "TikTok"
+    type: select
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/TikTok.png
+    use:
+      - ALL
+    filter: ".*"
+    proxies:
+      - "手动选择"
+      - "自动选择"
+      - "香港节点"
+      - "美国节点"
+      - "日本节点"
+      - "新加坡节点"
+      - "台湾节点"
+      - "韩国节点"
+      - "全球直连"
+  - name: "YouTube"
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/YouTube.png
+    type: select
+    use:
+      - ALL
+    filter: ".*"
+    proxies:
+      - "手动选择"
+      - "自动选择"
+      - "香港节点"
+      - "美国节点"
+      - "日本节点"
+      - "新加坡节点"
+      - "台湾节点"
+      - "韩国节点"
+      - "全球直连"
+  - name: "Netflix"
+    type: select
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Netflix.png
+    use:
+      - ALL
+    filter: ".*"
+    proxies:
+      - "手动选择"
+      - "自动选择"
+      - "香港节点"
+      - "美国节点"
+      - "日本节点"
+      - "新加坡节点"
+      - "台湾节点"
+      - "韩国节点"
+      - "全球直连"
+  - name: "Spotify"
+    type: select
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Spotify.png
+    use:
+      - ALL
+    filter: ".*"
+    proxies:
+      - "手动选择"
+      - "自动选择"
+      - "香港节点"
+      - "美国节点"
+      - "日本节点"
+      - "新加坡节点"
+      - "台湾节点"
+      - "韩国节点"
+      - "全球直连"
+  - name: "国外媒体"
+    type: select
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/ForeignMedia.png
+    use:
+      - ALL
+    filter: ".*"
+    proxies:
+      - "手动选择"
+      - "自动选择"
+      - "香港节点"
+      - "美国节点"
+      - "日本节点"
+      - "新加坡节点"
+      - "台湾节点"
+      - "韩国节点"
+      - "全球直连"
+  - name: "国外电商"
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Amazon.png
+    type: select
+    use:
+      - ALL
+    filter: ".*"
+    proxies:
+      - "手动选择"
+      - "自动选择"
+      - "香港节点"
+      - "美国节点"
+      - "日本节点"
+      - "新加坡节点"
+      - "台湾节点"
+      - "韩国节点"
+      - "全球直连"
+  - name: "谷歌FCM"
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Google.png
+    type: select
+    use:
+      - ALL
+    filter: ".*"
+    proxies:
+      - "手动选择"
+      - "自动选择"
+      - "香港节点"
+      - "美国节点"
+      - "日本节点"
+      - "新加坡节点"
+      - "台湾节点"
+      - "韩国节点"
+      - "全球直连"
+  - name: "谷歌服务"
+    type: select
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Google.png
+    use:
+      - ALL
+    filter: ".*"
+    proxies:
+      - "手动选择"
+      - "自动选择"
+      - "香港节点"
+      - "美国节点"
+      - "日本节点"
+      - "新加坡节点"
+      - "台湾节点"
+      - "韩国节点"
+      - "全球直连"
+  - name: "苹果服务"
+    type: select
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Apple.png
+    use:
+      - ALL
+    filter: ".*"
+    proxies:
+      - "手动选择"
+      - "自动选择"
+      - "香港节点"
+      - "美国节点"
+      - "日本节点"
+      - "新加坡节点"
+      - "台湾节点"
+      - "韩国节点"
+      - "全球直连"
+  - name: "微软服务"
+    type: select
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Microsoft.png
+    use:
+      - ALL
+    filter: ".*"
+    proxies:
+      - "手动选择"
+      - "自动选择"
+      - "香港节点"
+      - "美国节点"
+      - "日本节点"
+      - "新加坡节点"
+      - "台湾节点"
+      - "韩国节点"
+      - "全球直连"
+  - name: "测速工具"
+    type: select
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Speedtest.png
+    use:
+      - ALL
+    filter: ".*"
+    proxies:
+      - "手动选择"
+      - "自动选择"
+      - "香港节点"
+      - "美国节点"
+      - "日本节点"
+      - "新加坡节点"
+      - "台湾节点"
+      - "韩国节点"
+      - "全球直连"
+  - name: "漏网之鱼"
+    type: select
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Final.png
+    use:
+      - ALL
+    filter: ".*"
+    proxies:
+      - "手动选择"
+      - "自动选择"
+      - "香港节点"
+      - "美国节点"
+      - "日本节点"
+      - "新加坡节点"
+      - "台湾节点"
+      - "韩国节点"
+      - "全球直连"
+  - name: "非标端口"
+    type: select
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/World_Map.png
+    proxies:
+      - "漏网之鱼"
+      - "全球直连"
+  - name: "香港节点"
+    type: url-test
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Hong_Kong.png
+    url: https://cp.cloudflare.com/generate_204
+    interval: 300
+    tolerance: 50
+    use:
+      - ALL
+    filter: "(\U0001F1ED\U0001F1F0|港|\\bHK(?:[-_ ]?\\d+(?:[-_ ]?[A-Za-z]{2,})?)?\\b|hk|Hong
+      Kong|HongKong|hongkong|HONG KONG|HONGKONG|深港|HKG|九龙|Kowloon|新界|沙田|荃湾|葵涌)"
+  - name: "美国节点"
+    type: url-test
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/United_States.png
+    url: https://cp.cloudflare.com/generate_204
+    interval: 300
+    tolerance: 50
+    use:
+      - ALL
+    filter: "(\U0001F1FA\U0001F1F8|美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|纽约|纽纽|亚特兰大|迈[...]
+      ]?\\d+(?:[-_ ]?[A-Za-z]{2,})?)?\\b|United States|UnitedStates|UNITED STATES|USA|America|AMERICA|JFK|EWR|IAD|ATL|ORD|MIA|NYC|LAX|SFO|SEA|DFW|SJC)"
+  - name: "日本节点"
+    type: url-test
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Japan.png
+    url: https://cp.cloudflare.com/generate_204
+    interval: 300
+    tolerance: 50
+    use:
+      - ALL
+    filter: "(\U0001F1EF\U0001F1F5|日本|川日|东京|大阪|泉日|埼玉|沪日|深日|(?<!尼|-)日|\\bJP(?:[-_ ]?\\d+(?:[-_
+      ]?[A-Za-z]{2,})?)?\\b|Japan|JAPAN|JPN|NRT|HND|KIX|TYO|OSA|关西|Kansai|KANSAI)"
+  - name: "新加坡节点"
+    type: url-test
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Singapore.png
+    url: https://cp.cloudflare.com/generate_204
+    interval: 300
+    tolerance: 50
+    use:
+      - ALL
+    filter: "(\U0001F1F8\U0001F1EC|新加坡|坡|狮城|\\bSG(?:[-_ ]?\\d+(?:[-_ ]?[A-Za-z]{2,})?)?\\b|Singapore|SINGAPORE|SIN)"
+  - name: "台湾节点"
+    type: url-test
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Taiwan.png
+    url: https://cp.cloudflare.com/generate_204
+    interval: 300
+    tolerance: 50
+    use:
+      - ALL
+    filter: "(\U0001F1F9\U0001F1FC|\U0001F1FC\U0001F1F8|台|新北|彰化|\\bTW(?:[-_ ]?\\d+(?:[-_
+      ]?[A-Za-z]{2,})?)?\\b|Taiwan|TAIWAN|TWN|TPE|ROC)"
+  - name: "韩国节点"
+    type: url-test
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Korea.png
+    url: https://cp.cloudflare.com/generate_204
+    interval: 300
+    tolerance: 50
+    use:
+      - ALL
+    filter: "(\U0001F1F0\U0001F1F7|\\bKR(?:[-_ ]?\\d+(?:[-_ ]?[A-Za-z]{2,})?)?\\b|Korea|KOREA|KOR|首尔|韩|韓|春川|Chuncheon|ICN)"
+  - name: "全球直连"
+    type: select
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Direct.png
+    proxies:
+      - "DIRECT"
+rules:
+- "GEOSITE,private,全球直连"
+- "GEOIP,private,全球直连,no-resolve"
+- "RULE-SET,Direct,全球直连"
+- "RULE-SET,Proxy,手动选择"
+- "GEOSITE,jsdelivr,手动选择"
+- "GEOSITE,pikpak,PikPak"
+- "GEOSITE,cloudflare,CloudFlare"
+- "RULE-SET,Cloudflare_No_Resolve,CloudFlare"
+- "RULE-SET,CloudFlare,CloudFlare"
+- "RULE-SET,Custom_Direct_Domain,全球直连"
+- "RULE-SET,Custom_Direct_Classical_IP,全球直连"
+- "RULE-SET,Custom_Proxy_Domain,手动选择"
+- "RULE-SET,Custom_Proxy_Classical_IP,手动选择"
+- "GEOSITE,google-cn,全球直连"
+- "GEOSITE,category-games@cn,全球直连"
+- "GEOSITE,category-game-platforms-download,全球直连"
+- "GEOSITE,category-public-tracker,全球直连"
+- "RULE-SET,DMM_No_Resolve,DMM"
+- "RULE-SET,AV_Category,DMM"
+- "RULE-SET,JavDB,JavDB"
+- "GEOSITE,category-porn,Porn"
+- "RULE-SET,Telegram_No_Resolve,Telegram"
+- "GEOSITE,category-social-media-!cn,社交媒体"
+- "GEOSITE,openai,ChatGPT"
+- "GEOSITE,category-ai-!cn,AI服务"
+- "GEOSITE,github,GitHub"
+- "RULE-SET,Speedtest_No_Resolve,测速工具"
+- "GEOSITE,category-speedtest,测速工具"
+- "GEOSITE,youtube,YouTube"
+- "GEOSITE,apple,苹果服务"
+- "GEOSITE,microsoft,微软服务"
+- "GEOSITE,googlefcm,谷歌FCM"
+- "GEOSITE,google,谷歌服务"
+- "GEOSITE,tiktok,TikTok"
+- "GEOSITE,netflix,Netflix"
+- "GEOSITE,spotify,Spotify"
+- "GEOSITE,category-entertainment,国外媒体"
+- "GEOSITE,category-ecommerce,国外电商"
+- "GEOSITE,gfw,手动选择"
+- "GEOIP,twitter,社交媒体,no-resolve"
+- "GEOIP,facebook,社交媒体,no-resolve"
+- "GEOIP,google,谷歌服务,no-resolve"
+- "GEOIP,netflix,Netflix,no-resolve"
+- "GEOSITE,cn,全球直连"
+- "GEOIP,cn,全球直连"
+- "RULE-SET,Custom_Port_Direct,非标端口"
+- "MATCH,漏网之鱼"
+rule-providers:
+  Direct:
+    type: http
+    behavior: classical
+    url: "https://github.com/ZiPenOk/Custom_OpenClash_Rules/raw/dev/rule/Custom/Direct.yaml"
+    path: "./rule_provider/Direct.yaml"
+    interval: 28800
+  Proxy:
+    type: http
+    behavior: classical
+    url: "https://github.com/ZiPenOk/Custom_OpenClash_Rules/raw/dev/rule/Custom/Proxy.yaml"
+    path: "./rule_provider/Proxy.yaml"
+    interval: 28800
+  Custom_Direct_Domain:
+    type: http
+    behavior: domain
+    url: "https://github.com/Aethersailor/Custom_OpenClash_Rules/raw/main/rule/Custom_Direct_Domain.yaml"
+    path: "./rule_provider/Custom_Direct_Domain.yaml"
+    interval: 28800
+  Custom_Direct_Classical_IP:
+    type: http
+    behavior: classical
+    url: "https://github.com/Aethersailor/Custom_OpenClash_Rules/raw/main/rule/Custom_Direct_Classical_IP.yaml"
+    path: "./rule_provider/Custom_Direct_Classical_IP.yaml"
+    interval: 28800
+  Custom_Proxy_Domain:
+    type: http
+    behavior: domain
+    url: "https://github.com/Aethersailor/Custom_OpenClash_Rules/raw/main/rule/Custom_Proxy_Domain.yaml"
+    path: "./rule_provider/Custom_Proxy_Domain.yaml"
+    interval: 28800
+  Custom_Proxy_Classical_IP:
+    type: http
+    behavior: classical
+    url: "https://github.com/Aethersailor/Custom_OpenClash_Rules/raw/main/rule/Custom_Proxy_Classical_IP.yaml"
+    path: "./rule_provider/Custom_Proxy_Classical_IP.yaml"
+    interval: 28800
+  DMM_No_Resolve:
+    type: http
+    behavior: classical
+    url: "https://github.com/blackmatrix7/ios_rule_script/raw/master/rule/Clash/DMM/DMM_No_Resolve.yaml"
+    path: "./rule_provider/DMM_No_Resolve.yaml"
+    interval: 28800
+  AV_Category:
+    type: http
+    behavior: classical
+    url: "https://github.com/ZiPenOk/Custom_OpenClash_Rules/raw/dev/rule/Custom/AV_Category.yaml"
+    path: "./rule_provider/AV_Category.yaml"
+    interval: 28800
+  JavDB:
+    type: http
+    behavior: classical
+    url: "https://github.com/ZiPenOk/Custom_OpenClash_Rules/raw/dev/rule/Custom/JavDB.yaml"
+    path: "./rule_provider/JavDB.yaml"
+    interval: 28800
+  Telegram_No_Resolve:
+    type: http
+    behavior: classical
+    url: "https://github.com/blackmatrix7/ios_rule_script/raw/master/rule/Clash/Telegram/Telegram_No_Resolve.yaml"
+    path: "./rule_provider/Telegram_No_Resolve.yaml"
+    interval: 28800
+  Cloudflare_No_Resolve:
+    type: http
+    behavior: classical
+    url: "https://github.com/blackmatrix7/ios_rule_script/raw/master/rule/Clash/Cloudflare/Cloudflare_No_Resolve.yaml"
+    path: "./rule_provider/Cloudflare_No_Resolve.yaml"
+    interval: 28800
+  CloudFlare:
+    type: http
+    behavior: classical
+    url: "https://github.com/ZiPenOk/Custom_OpenClash_Rules/raw/dev/rule/Custom/CloudFlare.yaml"
+    path: "./rule_provider/CloudFlare.yaml"
+    interval: 28800
+  Speedtest_No_Resolve:
+    type: http
+    behavior: classical
+    url: "https://github.com/blackmatrix7/ios_rule_script/raw/master/rule/Clash/Speedtest/Speedtest_No_Resolve.yaml"
+    path: "./rule_provider/Speedtest_No_Resolve.yaml"
+    interval: 28800
+  Custom_Port_Direct:
+    type: http
+    behavior: classical
+    url: "https://github.com/Aethersailor/Custom_OpenClash_Rules/raw/main/rule/Custom_Port_Direct.yaml"
+    path: "./rule_provider/Custom_Port_Direct.yaml"
+    interval: 28800
+  oc-cn-domain:
+    type: http
+    interval: 43200
+    behavior: domain
+    format: mrs
+    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/cn.mrs"
+    path: "./rule_provider/oc-cn-domain.mrs"
