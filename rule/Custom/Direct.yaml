@@ -7,4 +7,4 @@ payload:
   - DOMAIN-SUFFIX,xn--blqv68cix3a.com
 # Pop AI
 #  - DOMAIN-SUFFIX,popcorn.wiki
-  - DOMAIN-SUFFIX,vnts2-cf.freetuchuang.workers.dev
+  - DOMAIN,vnts2-cf.freetuchuang.workers.dev
