@@ -1,10 +1,7 @@
 # 内容：个人使用环境-国内直连
-# 数量：2条
+# 数量：3条
 
 payload:
   - DST-PORT,3478
-# F&F OK 订阅
   - DOMAIN-SUFFIX,xn--blqv68cix3a.com
-# Pop AI
-#  - DOMAIN-SUFFIX,popcorn.wiki
-  - DOMAIN,vnts2-cf.freetuchuang.workers.dev
+  - DOMAIN,vnt.574476.xyz
