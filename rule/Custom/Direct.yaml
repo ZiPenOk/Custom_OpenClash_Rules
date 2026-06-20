@@ -4,3 +4,5 @@
 payload:
   - DST-PORT,3478
   - DOMAIN-SUFFIX,xn--blqv68cix3a.com
+  - DOMAIN-SUFFIX,cfyan.cc.cd
+  - IP-CIDR,14.137.230.112/32

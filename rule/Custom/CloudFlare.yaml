@@ -3,8 +3,8 @@
 
 payload:
   - '+.argotunnel.com'
+  - DOMAIN,mail.574476.xyz
+  - DOMAIN,worker.javxy.cc.cd
   - DOMAIN-SUFFIX,sh1nyan.fun
   - DOMAIN-SUFFIX,sh1nyan.qzz.io
-  - DOMAIN-SUFFIX,mail.574476.xyz
-  - DOMAIN-SUFFIX,worker.javxy.cc.cd
   - DOMAIN-SUFFIX,sink-url.cc.cd
