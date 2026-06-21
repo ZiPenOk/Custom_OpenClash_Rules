@@ -472,7 +472,6 @@ rules:
 - "GEOSITE,jsdelivr,手动选择"
 - "GEOSITE,pikpak,PikPak"
 - "GEOSITE,cloudflare,CloudFlare"
-- "RULE-SET,Cloudflare_No_Resolve,CloudFlare"
 - "RULE-SET,CloudFlare,CloudFlare"
 - "RULE-SET,Custom_Direct_Domain,全球直连"
 - "RULE-SET,Custom_Direct_Classical_IP,全球直连"
@@ -572,12 +571,6 @@ rule-providers:
     behavior: classical
     url: "https://github.com/blackmatrix7/ios_rule_script/raw/master/rule/Clash/Telegram/Telegram_No_Resolve.yaml"
     path: "./rule_provider/Telegram_No_Resolve.yaml"
-    interval: 28800
-  Cloudflare_No_Resolve:
-    type: http
-    behavior: classical
-    url: "https://github.com/blackmatrix7/ios_rule_script/raw/master/rule/Clash/Cloudflare/Cloudflare_No_Resolve.yaml"
-    path: "./rule_provider/Cloudflare_No_Resolve.yaml"
     interval: 28800
   CloudFlare:
     type: http
