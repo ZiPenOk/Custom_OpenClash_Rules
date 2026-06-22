@@ -2,6 +2,8 @@
 # 数量：13条
 
 payload:
+  - DOMAIN,javxy.cc.cd
+  - DOMAIN,worker.javxy.cc.cd
   - DOMAIN-SUFFIX,sod.co.jp
   - DOMAIN-SUFFIX,prestige-av.com
   - DOMAIN-SUFFIX,s1s1s1.com
