@@ -1,0 +1,15 @@
+{
+  "version": 4,
+  "rules": [
+    {
+      "domain": [
+        "123av.com",
+        "123av.me"
+      ],
+      "domain_suffix": [
+        ".123av.com",
+        ".123av.me"
+      ]
+    }
+  ]
+}
