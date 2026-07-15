@@ -6,3 +6,9 @@ payload:
   - DOMAIN,apitokenking.cc.cd
   - DOMAIN,tokenking.cc.cd
   - DOMAIN-SUFFIX,sub.jjzsub01.com
+  - DOMAIN-SUFFIX,cfyan.cc.cd
+  - IP-CIDR,14.137.230.112/32
+  - IP-CIDR,38.55.99.241/32
+  - IP-CIDR,13.212.154.55/32
+  - IP-CIDR,3.112.251.25/32
+  - IP-CIDR,145.79.143.42/32
