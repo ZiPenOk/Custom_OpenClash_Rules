@@ -11,6 +11,16 @@ payload:
  # - IP-CIDR,3.112.251.25/32
  # - IP-CIDR,145.79.143.42/32
 
-  - PROCESS-NAME,gonc
+
+  - DOMAIN-SUFFIX,mqtt.gonc.cc,DIRECT
+  - DOMAIN-SUFFIX,broker.emqx.io,DIRECT
+  - DOMAIN-SUFFIX,broker.hivemq.com,DIRECT
+  - DOMAIN-SUFFIX,test.mosquitto.org,DIRECT
+  - DOMAIN-SUFFIX,stun.gonc.cc,DIRECT
+  - DOMAIN-SUFFIX,stun.l.google.com,DIRECT
+  - DOMAIN-SUFFIX,turn.cloudflare.com,DIRECT
+  - DOMAIN-SUFFIX,global.turn.twilio.com,DIRECT
+  - DOMAIN-SUFFIX,stun.nextcloud.com,DIRECT
+  - DOMAIN-SUFFIX,gonc.cc,DIRECT
 
   
