@@ -12,7 +12,9 @@ payload:
  # - IP-CIDR,145.79.143.42/32
 
 # Tailscale
-  - DOMAIN-SUFFIX,tailscale.com
+  - DOMAIN-SUFFIX,controlplane.tailscale.com
+  - DOMAIN-SUFFIX,login.tailscale.com
+  - DOMAIN-SUFFIX,log.tailscale.com
   - IP-CIDR,192.200.0.0/24
   - IP-CIDR,100.64.0.0/10
   
