@@ -11,7 +11,10 @@ payload:
  # - IP-CIDR,3.112.251.25/32
  # - IP-CIDR,145.79.143.42/32
 
-# Tailscale
-  - IP-CIDR,192.200.0.0/24
-  - IP-CIDR,100.64.0.0/10
+  - DOMAIN-SUFFIX,mqtt.gonc.cc
+  - DOMAIN-SUFFIX,broker.emqx.io
+  - DOMAIN-SUFFIX,hivemq.com
+  - DOMAIN-SUFFIX,mosquitto.org
+  - DOMAIN-SUFFIX,gonc.cc
+
   
