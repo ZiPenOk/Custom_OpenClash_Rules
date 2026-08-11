@@ -22,3 +22,5 @@ payload:
   - DOMAIN-SUFFIX,global.turn.twilio.com,DIRECT
   - DOMAIN-SUFFIX,stun.nextcloud.com,DIRECT
   - DOMAIN-SUFFIX,gonc.cc,DIRECT
+  
+  - DOMAIN-SUFFIX,data.videosnoerroranymore.com,DIRECT
