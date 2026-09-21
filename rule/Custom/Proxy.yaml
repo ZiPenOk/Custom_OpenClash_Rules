@@ -8,6 +8,11 @@ payload:
   - DOMAIN,tokenking.cc.cd
   - DOMAIN-SUFFIX,sub.jjzsub01.com
   - DOMAIN-SUFFIX,cfyan.cc.cd
+  - DOMAIN,tz.574476.xyz
+  - DOMAIN,mail.574476.xyz
+  - DOMAIN-SUFFIX,sh1nyan.fun
+  - DOMAIN-SUFFIX,sh1nyan.qzz.io
+  - DOMAIN-SUFFIX,sink-url.cc.cd
   - IP-CIDR,14.137.230.112/32
   - IP-CIDR,38.55.99.241/32
   - IP-CIDR,13.212.154.55/32

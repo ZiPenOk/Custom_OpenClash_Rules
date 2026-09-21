@@ -1,0 +1,5 @@
+# 内容：CloudFlare Tunnel
+# 数量：1条
+
+payload:
+  - DOMAIN-SUFFIX,argotunnel.com
