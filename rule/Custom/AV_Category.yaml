@@ -2,8 +2,6 @@
 # 数量：13条
 
 payload:
-  - DOMAIN,javxy.cc.cd
-  - DOMAIN,worker.javxy.cc.cd
   - DOMAIN-SUFFIX,fanza.jp
   - DOMAIN-SUFFIX,sod.co.jp
   - DOMAIN-SUFFIX,prestige-av.com

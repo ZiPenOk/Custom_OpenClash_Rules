@@ -4,13 +4,10 @@
 payload:
   - DOMAIN-SUFFIX,169bbs.com
   - DOMAIN-SUFFIX,ymawv.la
-  - DOMAIN,apitokenking.cc.cd
-  - DOMAIN,tokenking.cc.cd
   - DOMAIN-SUFFIX,sub.jjzsub01.com
   - DOMAIN-SUFFIX,cfyan.cc.cd
   - DOMAIN,tz.574476.xyz
   - DOMAIN,mail.574476.xyz
-  - DOMAIN-SUFFIX,sh1nyan.fun
   - DOMAIN-SUFFIX,sh1nyan.qzz.io
   - DOMAIN-SUFFIX,sink-url.cc.cd
   - IP-CIDR,14.137.230.112/32
