@@ -11,16 +11,31 @@ payload:
  # - IP-CIDR,3.112.251.25/32
  # - IP-CIDR,145.79.143.42/32
 
-  - PROCESS-NAME,gonc
-  - DOMAIN-SUFFIX,mqtt.gonc.cc,DIRECT
-  - DOMAIN-SUFFIX,broker.emqx.io,DIRECT
-  - DOMAIN-SUFFIX,broker.hivemq.com,DIRECT
-  - DOMAIN-SUFFIX,test.mosquitto.org,DIRECT
-  - DOMAIN-SUFFIX,stun.gonc.cc,DIRECT
-  - DOMAIN-SUFFIX,stun.l.google.com,DIRECT
-  - DOMAIN-SUFFIX,turn.cloudflare.com,DIRECT
-  - DOMAIN-SUFFIX,global.turn.twilio.com,DIRECT
-  - DOMAIN-SUFFIX,stun.nextcloud.com,DIRECT
-  - DOMAIN-SUFFIX,gonc.cc,DIRECT
-  
-  - DOMAIN-SUFFIX,data.videosnoerroranymore.com,DIRECT
+# EasyTier
+  - PROCESS-NAME,easytier-core
+  - PROCESS-NAME,easytier-web
+  - DOMAIN-SUFFIX,easytier.weiai.org.cn
+  - DOMAIN-SUFFIX,225284.xyz
+  - DOMAIN-SUFFIX,et.sumnight.online
+  - DOMAIN-SUFFIX,bj-eo-et.teleseon.cn
+  - DOMAIN-SUFFIX,et.chinokou.cn
+  - DOMAIN-SUFFIX,et.w0m.top
+  - DOMAIN-SUFFIX,et.basd1.de
+  - DOMAIN-SUFFIX,game.udad.top
+  - DOMAIN-SUFFIX,boi.de5.net
+  - IP-CIDR,183.230.36.171/32
+  - IP-CIDR,47.92.208.217/32
+  - DST-PORT,7910
+  - DST-PORT,9546
+  - DST-PORT,11010
+  - DST-PORT,11011
+  - DST-PORT,11012
+  - DST-PORT,32978
+  - DST-PORT,35971
+  - DST-PORT,48625
+  - DST-PORT,54321
+  - DST-PORT,60006
+  - DST-PORT,61123
+
+
+
