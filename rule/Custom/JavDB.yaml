@@ -7,3 +7,4 @@ payload:
   - DOMAIN-SUFFIX,jdbimgs.com
   - DOMAIN-SUFFIX,jdbstatic.com
   - DOMAIN-REGEX,^javdb\d+\.com$
+  - DOMAIN-SUFFIX,jdforrepam.com
